@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Esto hara que main este ocupando el 100% del wieport sin importar el tamaño de la pantalla */
+/*I se ponemos 50 a cada uno, entonces ocupara la mitad del ancho y la mitad del largo*/
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+/*Cuando vallamos a utilizar el min y el max en el width, necesitamos un width base y este casi siempre va a ser en porcentaje*/
+section{
+    width: 80%;
+/*Su anchura maxima sera de 320px de ahi en adelante en pantallas mas chicas es posible que aparezca un scrooll*/
+    min-width: 320px;
+/*Con el max-width haremos que apartir de 500px en este caso el elemento ya no va a crecer*/
+    max-width: 500px;
+/*min-height para que no se haga el desbordamiento*/
+    min-height: 500px;
+/*centrando el elemento*/
+    margin: 0 auto;
+    background-color: aqua;
+}

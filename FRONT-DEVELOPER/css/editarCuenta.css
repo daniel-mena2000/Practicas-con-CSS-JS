@@ -1,0 +1,117 @@
+:root{
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #ACD9B2;
+    --white: #fff;
+    --black: #000;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik Puddles', cursive;
+}
+
+body{
+    margin: 0;
+}
+.nav ul{
+    width: 100%;
+margin-top: 0;
+    background-color: #7ebe87;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+.nav li{
+    list-style-type: none;
+}
+.lo{
+    width: 50px;
+}
+
+.login{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}
+
+.form-conteiner{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.title{
+    font-size: var(--lg);
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.mi_form{
+    display: flex;
+    flex-direction: column;
+}
+.mi_form div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mi_form a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 54px;
+}
+.label_pass{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.value{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+}
+
+.primary_button{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    padding: 15px;
+}
+
+.primary_button:hover{
+    background-color: #7ebe87;
+    color: var(--white);
+}
+.edit_button{
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 640px){
+    .form-conteiner{
+        height: 100%;
+        margin-top: 100px;
+        
+    }
+    .mi_form{
+        height: 100%;
+        justify-content: space-between;
+    }
+}

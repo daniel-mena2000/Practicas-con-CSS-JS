@@ -1,0 +1,64 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.padre{
+    border: 2px black dotted;
+    display: inline-block;
+}
+
+.box{
+    display: inline-block;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+/*Con position el elemento pierde su lugar*/
+#two{
+    background-color: chartreuse;
+    position: absolute;
+    
+}
+
+#three{
+    position: relative;
+    top: 15px;
+
+}
+
+.nose{
+    display: inline-block;
+    margin: 20px;
+}
+
+.box2{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+#uno{
+    background-color: cornflowerblue;
+    position: absolute;
+    width: 300px;
+    border-radius: 20px;
+}
+#uno .text-uno{
+margin-top: 50px;
+}
+
+#dos{
+    background-color: coral;
+   position: relative;
+   bottom: 50px;
+   height: 100px;
+   left: 50px;
+   border-radius: 20px;
+   text-align: center;
+
+}
+

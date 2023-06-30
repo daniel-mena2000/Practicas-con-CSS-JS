@@ -1,0 +1,14 @@
+
+/*Hijo*/
+
+/*El hijo directo de "div*, agregale los estilos*/
+div > p{
+    color: red;
+}
+
+
+/*Descendiente*/
+/*Todas las etiquetas "a" que esten dentro de un contenerdor con la clase "nav" */
+.nav a{
+    color: aqua;
+}

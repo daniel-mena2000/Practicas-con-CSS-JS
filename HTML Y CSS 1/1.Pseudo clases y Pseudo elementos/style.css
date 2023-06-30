@@ -1,0 +1,37 @@
+
+.main-nav{
+    margin-top: 10px;
+    list-style: none;
+    background-color: rgb(113, 10, 10);
+    padding-left: 0;
+    height: 30px;
+}
+
+
+.main-nav__item{
+    display: inline-block;
+}
+
+/*Apuntando a las "a" con especificidad */
+.main-nav__item a{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    /*border-radius: 2px;*/
+    text-decoration: none;
+    /*background-color: brown;*/
+}
+
+/*Pseudoclases: hover*/
+/*Pseudoclases: Define el estilo de un "estado" especial de un elemento*/
+.main-nav__item a:hover{
+    color: darkgrey;
+}
+
+.main-nav__item a:active{
+    color: rgb(20, 220, 220);
+}
+
+/*Pseudoelementos:: Define el estilo de una parte especifica de un elemento*/
+.main-nav__item a::after{
+    content: " | ";
+}

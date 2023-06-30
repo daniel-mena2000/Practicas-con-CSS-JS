@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Con la etiqueta "pictura" y la ayuda del navegador nos ayuda que imagen mostrar dependiendo el tamaño, ya que no podemos
+poner una imagen de 1000px por 1000px para un desktop y un mobile ya que un mobile ocupa menos pixelaje -->
+
+    <main>
+<!-- La primera imagen es pequeña -->
+<!-- "pincture" tiene etiquetas "source" y en su propiedad le ponemos donde encontrar otras imagenes  -->
+        
+        <picture>
+            <source media="(min-width: 1300px)" srcset="/img/1.jpeg">   <!-- imagen larga -->
+            <source media="(min-width: 1000px)" srcset="/img/3.jpeg">    <!-- mediana -->
+            <img src="/img/2.jpeg" alt="Imagen ejemplo"> <!-- imagen base -->
+        </picture>
+
+    </main>
+</body>
+</html>

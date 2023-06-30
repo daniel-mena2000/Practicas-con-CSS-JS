@@ -1,0 +1,14 @@
+
+
+/*Por defecto el navegador entrega 16px*/
+/*Aqui nosotros le cambiamos por el 75% y el 75% de 16px es 12px*/
+/*El h1 como tal no va a heredar ese tamaño solo va a heredar el tipo de fuente*/
+html{
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Para que herede le ponemos "inherit" ahora si nos entrega los 12px */
+h1{
+    font-size: inherit;
+}

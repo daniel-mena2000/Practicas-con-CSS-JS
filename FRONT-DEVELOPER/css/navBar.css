@@ -1,0 +1,118 @@
+:root{
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #ACD9B2;
+    --white: #fff;
+    --black: #000;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik Puddles', cursive;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+/*Este solo aparecera en mobile*/
+.menu{
+    display: none;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+.navbar_left ul, 
+.navbar_right ul{
+    list-style: none;
+   display: flex;
+   align-items: center;
+   height: 60px;
+}
+.navbar_left{
+    display: flex;
+}
+.navbar_left ul{
+    margin-left: 20px;
+}
+.navbar_right{
+    display: flex;
+}
+
+.navbar_left ul li a,
+.navbar_right ul a{
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.navbar_left ul li a:hover,
+.navbar_right ul a:hover{
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+}
+
+.nav_email{
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-right: 15px;
+}
+
+.navbar_shoping_cart{
+    position: relative;
+}
+
+.navbar_shoping_cart div{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 9px;
+    display: flex;
+    place-content: center;
+
+}
+
+
+.navbar_right .logo_buy{
+    width: 55px;
+    margin-right: 12px;
+
+}
+
+@media (max-width: 640px){
+    .menu{
+        display: block;
+        width: 70px;
+    }
+    .navbar_left ul{
+        display: none;
+    }
+    .nav_email{
+        display: none;
+    }
+}

@@ -1,0 +1,114 @@
+.contenedor{
+    border: 5px solid #000;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+
+}
+.item{
+    font-size: 4rem;
+}
+
+.item-1{
+    border: 5px solid #098;
+    background-color: coral;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item-2{
+    border: 5px solid #098;
+    background-color: chartreuse;
+ 
+    grid-row-start: 2;
+    grid-row-end: 4;
+    /*Se puede simplificar con grid-row*/
+    /*grid-row: 2 / 4;*/
+}
+
+.item-3{
+    border: 5px solid #098;
+    background-color: deeppink;
+/*Primero donde comienza en row, luego en columna, y el final de nuestra grilla en este caso es 4*/
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+/*........................................................................*/
+.contenedor2{
+    border: 5px solid #000;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas: 
+    "header header header"
+    "side main main"
+    "side main main";
+    place-content: center;
+
+}
+.item2{
+    font-size: 4rem;
+}
+
+.item-11{
+    border: 5px solid #098;
+    background-color: rgb(80, 153, 255);
+    grid-area: header;
+}
+
+.item-22{
+    border: 5px solid #098;
+    background-color: rgb(98, 0, 255);
+    grid-area: side;
+  
+}
+
+.item-33{
+    border: 5px solid #098;
+    background-color: rgb(247, 255, 20);
+    grid-area: main;
+}
+
+/*.....................EJERCITACIONES.....................................*/
+
+.contenedor3{
+    background-color: cornsilk;
+    border: 3px solid #000;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+}
+
+.item3{
+    font-size: 1.8rem;
+}
+
+.item-111{
+    background-color: rgb(84, 158, 10);
+}
+
+.item-222{
+    background-color: chartreuse;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item-333{
+    background-color: rgb(46, 84, 8);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item-444{
+    background-color: rgb(143, 181, 106);
+}
+.item-555{
+    background-color: rgb(106, 175, 41);
+}
+.item-666{
+    background-color: rgb(151, 215, 86);
+}   
+.item-777{
+    background-color: rgb(58, 92, 24);
+}

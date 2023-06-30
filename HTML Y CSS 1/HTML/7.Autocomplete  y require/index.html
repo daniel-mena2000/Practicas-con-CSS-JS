@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Autocomplete y Required</h1>
+
+    <p><b>Autocomplete</b> nos mostrara los nombres, correo, etc que esten guardados en el navegador</p>
+    <p><b>required</b> campos obligatorios</p>
+    <main>
+
+        <label for="nombre">
+            <span>Nombre</span>
+            <input id="nombre" type="text" name="nombre" autocomplete="name" required>
+        </label>
+        <label for="correo">
+            <span>correo</span>
+            <input id="correo" type="email" name="correo" autocomplete="email" required>
+        </label>
+        <label for="pais">
+            <span>pais</span>
+            <input id="pais" type="text" name="pais" autocomplete="country" required>
+        </label>
+        <label for="cp">
+            <span>cp</span>
+            <input id="cp" type="text" name="cp" autocomplete="postal-code" required>
+        </label>
+
+        <input type="submit">
+    </main>
+</body>
+</html>

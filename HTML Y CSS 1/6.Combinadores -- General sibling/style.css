@@ -1,0 +1,10 @@
+
+
+
+/*Combinadores: General Sibling o hermano general (~)*/
+
+/*Los hermano generales son lo que estan antes 
+Por lo tanto cambiaran de color todos los "p" que tengan un "h2" antes o mas bien de hermno general*/
+h2 ~ p{
+    color: red;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Keywords especiales</h1>
+    <p><b>fr: </b>es una unidad relativamente nueva de medida especial de CSS Grid para darle ancho o alto a filas y columnas. 1fr representa una fracción del total de columnas o filas.</p>
+    <p><b>min-content</b> ajusta el ancho de la celda lo mínimo posible sin romper su contenido.</p>
+    <p><b>max-content</b> ajusta el ancho de la celda lo máximo posible para mostrar su contenido.</p>
+    <p><b>auto-fill</b> logra que la grilla ocupe el 100% del espacio que tiene. Agrega columnas “fantasma” que rellenan el espacio sobrante del contenedor.</p>
+    <p><b>auto-fit</b> ensancha las columnas para que ocupen todo el espacio del contenedor.</p>
+    <h2>auto-fill y auto-fit</h2>
+    <p>ayudan a la grilla a ocupar el 100% del espacio disponible.</p>
+    <br>
+    <hr>
+    <h1>fr con repeat</h1>
+    <div class="contenedor">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3 3 33 3 3 3 3 3 3 3 3 3 33333 3333 333</div>
+        <div class="item item-4">444 4 4 4 4 4 4 4 4444 4444 44 4444</div>
+    </div>
+    <h1>fr</h1>
+    <div class="contenedor1">
+        <div class="item1 item-11">1</div>
+        <div class="item1 item-22">2</div>
+        <div class="item1 item-33">3 3 33 3 3 3 3 3 3 3 3 3 33333 3333 333</div>
+        <div class="item1 item-44">444 4 4 4 4 4 4 4 4444 4444 44 4444</div>
+    </div>
+    <hr>
+
+    <h1>min-content</h1>
+    <div class="contenedor2">
+        <div class="item2 item-111">1</div>
+        <div class="item2 item-222">2</div>
+        <div class="item2 item-333">3 3 33 3 3 3 3 3 3 3 3 3 33333 3333 333</div>
+        <div class="item2 item-444">444 4 4 4 4 4 4 4 4444 4444 44 4444</div>
+    </div>
+
+    <h1>max-content</h1>
+    <div class="contenedor3">
+        <div class="item3 item-1111">1</div>
+        <div class="item3 item-2222">2</div>
+        <div class="item3 item-3333">3 3 33 3 3 3 3 3 3 3 3 3 33333 3333 333</div>
+        <div class="item3 item-4444">444 4 4 4 4 4 4 4 4444 4444 44 4444</div>
+    </div>
+
+<hr>
+    <h1>Auto-fit</h1>
+    <p>Cuando declaramos un "auto-fit" tenemos igualmente delcarar un <b>minmax</b></p>
+    <div class="contenedor4">
+        <div class="item4 item-a">1</div>
+        <div class="item4 item-b">2</div>
+        <div class="item4 item-c">3</div>
+        <div class="item4 item-d">4</div>
+    </div>
+
+    <h1>Auto-fill</h1>
+    <p>Cuando declaramos un "auto-fill" tenemos igualmente delcarar un <b>minmax</b></p>
+
+    <div class="contenedor5">
+        <div class="item5 item-e">1</div>
+        <div class="item5 item-f">2</div>
+        <div class="item5 item-g">3</div>
+        <div class="item5 item-h">4</div>
+    </div>
+
+
+
+</body>
+</html>

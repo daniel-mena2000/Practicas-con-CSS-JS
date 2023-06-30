@@ -1,0 +1,74 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5{
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+}
+.c4{
+    height: auto;
+}
+
+.c1{
+    background-color: rgb(24, 37, 141);
+}
+.c2{
+    background-color: rgb(50, 46, 98);
+}
+.c3{
+    background-color: rgb(22, 80, 161);
+}
+
+.c4{
+    background-color: rgb(0, 166, 255);
+}
+.c5{
+    background-color: rgb(119, 216, 218);
+}
+
+@media (min-width: 600px) {
+    .c1{
+        width: 25%;
+    }
+    .c4{
+        width: 75%;
+    }
+    .c5{
+        width: 100%;
+    }
+}
+@media (min-width: 800px){
+    .conteiner{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+/*Podemos usar margin: 0 auto: de arriba y abajo no generes margin y de derecha y izquierda que sea auto*/
+        /*margin: 0 auto;*/
+    }
+    .c1{
+        width: 50%;
+        order: 1;
+    }
+    .c4{
+        width: 100%;
+    }
+    .c5{
+        width: 50%;
+        order: 2;
+    }
+
+}

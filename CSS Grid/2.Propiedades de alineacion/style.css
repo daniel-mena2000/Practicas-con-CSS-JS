@@ -1,0 +1,109 @@
+.contenedor{
+    border: 5px solid #000;
+    background-color: antiquewhite;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    gap: 40px;
+    /*Alinear horizontal*/
+    justify-content: center;
+    /*Alinear vertical*/
+    align-content: center;
+}
+.item{
+    border: 5px solid #098;
+    font-size: 4rem;
+}
+
+/*.............................................................*/
+/*Place content fusion de "justify-content" y "aling-content" con un solo valor  */
+.contenedorr1{
+    border: 5px solid #000;
+    background-color: antiquewhite;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    gap: 40px;
+    place-content: center;
+}
+.itemm1{
+    border: 5px solid #098;
+    font-size: 4rem;
+}
+/*................................................................*/
+.contenedorr2{
+    border: 5px solid #000;
+    background-color: antiquewhite;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    gap: 40px;
+    place-content: end;
+}
+.itemm2{
+    border: 5px solid #098;
+    font-size: 4rem;
+}
+
+/*.....................................................................*/
+
+.contenedorr5{
+    border: 5px solid #000;
+    background-color: antiquewhite;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    gap: 40px;
+    justify-items: end;
+    align-items: start;
+}
+.itemm5{
+    border: 5px solid #098;
+    font-size: 4rem;
+}
+/*......................................................................*/
+.contenedorr3{
+    border: 5px solid #000;
+    background-color: antiquewhite;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    gap: 40px;
+    /*horizontal*/
+    justify-items: end;
+    /*veritical*/
+    align-items: start;
+}
+.itemm3{
+    border: 5px solid #098;
+    font-size: 4rem;
+}
+.item2{
+    justify-self: start;
+    align-self: end;
+    border: 3px solid #eb0000;
+}
+
+/*......................................................*/
+.contenedorr4{
+    border: 5px solid #000;
+    background-color: rgb(97, 158, 208);
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-auto-rows: 150px;
+    justify-items: end;
+    align-items: end;
+    gap: 40px;
+
+}
+.itemm4{
+    border: 5px solid rgb(153, 0, 46);
+    font-size: 4rem;
+    
+}
+

@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+.conteiner{
+    background-color: #333;
+    height: 30vh;
+/*La orientacion por defecto de los elementos flex es en horizontal, y trabaja en bloque*/
+/*Si queremos los elementos flex en linea usamos "inline-flex"*/
+    display: flex;
+/*Flex-direction: el valor por defecto es row*/
+    flex-direction: row;
+/*La propiedad flex-wrap:su valor por defecto en nowrap, lo que dice que todos sus hijos se alinien en una sola fila*/
+/*Esto dependera mucho del valor que tengamos en "flex-direction"  */
+/*Por ejemplo el section con los 19 elementos ignorara ese 20% de tamaño*/
+    flex-wrap:wrap ;
+}
+.item{
+    border: medium solid #999;
+    width: 20%;
+    background-color: #c7b7b7;
+}

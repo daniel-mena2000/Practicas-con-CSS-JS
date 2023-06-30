@@ -1,0 +1,39 @@
+/*El root hace referencia al html osea al punto de partida de nuestro proyecto que engloba todo*/
+:root{
+    --primer-color: #003476;
+    --segundo-color: #b4d2f7;
+    --tamaño-encabezados: 4rem;
+    --fuente: 1.8rem
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primer-color);
+}
+main{
+    width: 100vw;
+    height: 70vh;
+    font-size: var(--fuente);
+}
+
+h1{
+    font-size: var(--tamaño-encabezados);
+    color: var(--primer-color);
+}
+
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--segundo-color);
+}

@@ -1,0 +1,16 @@
+
+*{
+/*Con  box.sizing le decimos que sume el padding con el with del elemento, para que se quite el scrool, ya que el el paddig en vez de escalar hacia afuera va hacia adentro*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+main{
+    width: 100%;
+    height: 500px;
+    border: 10px solid gray;
+/*20 de arriba a abajo y 35 de derecha a izquierda*/
+    padding: 20px 35px;
+}

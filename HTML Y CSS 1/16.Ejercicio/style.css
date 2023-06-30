@@ -1,0 +1,35 @@
+
+html{
+    box-sizing: border-box;
+
+}
+
+
+.mi-nav{
+    background-color: aqua;
+}
+.mi-nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.mi-div{
+    background-color: burlywood;
+    display: inline-block;
+    height: 900px;
+    width: 200px;
+    position: absolute;
+}
+
+.par{
+    background-color: aqua;
+    height: 200px;
+}
+
+.lorem{
+    background-color: rgb(148, 95, 160);
+    height: 900px;
+    position: relative;
+    left: 198px;
+}

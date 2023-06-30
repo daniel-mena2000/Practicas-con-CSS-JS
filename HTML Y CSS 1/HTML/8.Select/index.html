@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Select</h1>
+
+<!-- El value es el que se va a ir a la base de datos para identificar la opcion-->
+    
+<!-- este primer select no es el mas recomendable -->
+    <main>
+        <select name="Cursos" id="">
+            <option value="JS">JavaScript</option>
+            <option value="HTML">HTML 5</option>
+            <option value="CSS">CSS 3</option>
+            <option value="WEB">Web standars</option>
+        </select>
+
+<!-- Podemos escribir la opcion y aun que no este se mandara, y podemos por ejemplo crear un mensaje diciendole al usuario que se tomara en cuenta esa opcion -->
+        <input list="cursos">
+        <datalist id="cursos">
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML5">HTML 5</option>
+            <option value="CSS">CSS 3</option>
+            <option value="Web">WEB standars</option>
+        </datalist>
+    </main>
+
+
+
+</body>
+</html>

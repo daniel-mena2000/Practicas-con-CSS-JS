@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;  
+    margin: 0; 
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+.contenido{
+    height: auto;
+    background-color: rgb(8, 8, 61);
+    font-size: 1.8rem;
+    color: blue;
+    border: solid 1px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    border-radius: 10px;  
+    padding-bottom: 10px;
+
+}
+
+.box1{
+    background-color: aqua;
+}
+
+.box2{
+    background-color: chartreuse;
+}
+.box3{
+    background-color: rgb(255, 0, 230);
+}
+.box4{
+    background-color: rgb(242, 226, 0);
+}
+
+.numero{
+    border: none;
+    width: 170px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.btn{
+    border: none;
+    width: 170px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: cornsilk;
+}
+.btn:hover{
+    background-color: #748022;
+    color: aliceblue;
+}
+.result{
+    background-color: aliceblue;
+    border: none;
+    width: 170px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+
+/*reloj*/
+
+.miReloj{
+    width: 100vw;
+    height: 20vh;
+    background-color: darkorange;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    
+
+}
+
+.btnR{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color: #222;
+
+}
+
+
+.hora{
+        width: 250px;
+        height: 30px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        font-size: 20px;
+        text-align: center;
+}

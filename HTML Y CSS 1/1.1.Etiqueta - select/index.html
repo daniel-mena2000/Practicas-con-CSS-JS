@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Select</h1>
+
+    <main>
+
+        <select name="cursos" id="">
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML 5">HTML 5</option>
+            <option value="CSS 3">CSS 3</option>
+            <option value="Web standares">Web standares</option>
+        </select>
+
+<!-- Hciendolo con buenas practicas -->
+<!-- La diferencia es que podemos escribir la opcion directamente para no estar buscando una por una -->
+        <input list="cursos">
+        <datalist id="cursos">
+            <option value="JavaScript"></option>
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="Web Standares"></option>
+        </datalist>
+
+    </main>
+
+</body>
+</html>

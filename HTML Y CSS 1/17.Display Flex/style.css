@@ -1,0 +1,47 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+/*Display-direction es la direccion en la que se van a acomodar los hijos*/
+.conteiner{
+    border: .3rem solid black;
+    display: flex;
+/*Flex-wrap: en vez de que los elementos se compacten y cambien su tamaño, se iran colocando uno de bajo del otro dependiendo el espacio*/
+    flex-wrap: wrap;
+/*Justify-content: Nos ayuda a alinear el contenido de forma horizontal*/
+/*space-evenly: Mismo espacio entre los contenedores*/
+/*space-between:Mismo espacio entre los contenedores pero sin espacios iniciales y finales*/
+    justify-content: space-between;
+}
+.box{
+    width: 10rem;
+    height: 10rem;
+}
+
+.box1{
+    background-color: aqua;
+}
+.box2{
+    background-color: rgb(0, 255, 30);
+}
+.box3{
+    background-color: rgb(72, 0, 255);
+}
+.box4{
+    background-color: rgb(255, 0, 81);
+}
+.box5{
+    background-color: rgb(255, 247, 0);
+}
+.box6{
+    background-color: rgb(255, 106, 0);
+}

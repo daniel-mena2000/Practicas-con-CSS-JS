@@ -1,0 +1,11 @@
+
+/*Los combinadores nos permiten combinar multiples selectores y crear
+una mayor especificidad*/
+
+
+/*Adjacent o el hermano cercano*/
+
+/*Aqui decimos que queremos en "rojo" todas las etiquetas h2 que sean cercanas a un parrafo */
+h2 + p{
+    color: red;
+}

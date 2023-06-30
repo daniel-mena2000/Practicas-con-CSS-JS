@@ -1,0 +1,43 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: serif;
+    color: rgb(127, 80, 255);
+    margin-bottom: 10px;
+}
+/*El ID es mas importante que el h1 y la clase*/
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.nav{
+    margin-top: 10px;
+/*Quitar las viñetas*/
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav a{
+    color: aliceblue;
+    background-color: navy;
+    padding: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.nav .blog{
+    background-color: darkcyan ;
+}
