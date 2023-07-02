@@ -1,0 +1,62 @@
+
+section{
+    width: 1400px;
+    margin: 0 auto;
+}
+.uno{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+}
+
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    transform-origin: left top;
+
+}
+.circle:hover{
+   transform: rotate(90deg);
+}
+
+/*.................................................................................*/
+.circle2{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    transform-origin: right top;
+
+}
+
+.circle2:hover{
+    transform: rotate(90deg);
+}
+
+
+.circle3{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(253, 45, 229) 100%);
+    transform-origin: top;
+
+}
+
+.circle3:hover{
+    transform: rotate(90deg);
+}
+
+
+
+.circle4{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(0deg, rgb(195, 69, 34) 0%, rgb(45, 253, 73) 100%);
+    transform-origin: bottom;
+
+}
+
+.circle4:hover{
+    transform: rotate(90deg);
+}

@@ -1,0 +1,65 @@
+
+
+.shadow{
+    background: rgb(251, 6, 222);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 50%;
+}   
+
+.circle:hover{
+/*20px hacia la derecha y el -20 se movera hacia arriba*/
+    transform: translate(20px, -20px);
+}
+
+/*..................................................................*/
+.shadow2{
+    background: rgb(6, 243, 251);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle2{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    border-radius: 50%;
+}   
+
+.circle2:hover{
+/*Ahora -20 en el eje x y 20 en el eje y*/
+    transform: translate(-20px, +20px);
+}
+
+
+/*....................................................................*/
+
+
+.shadow3{
+    background: rgb(82, 102, 231);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle3{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 50%;
+}   
+
+.circle3:hover{
+/*Por defecto es X pero podemos indicar Y*/
+/*EJE Y*/
+    transform: translateY(-20px);
+}
+

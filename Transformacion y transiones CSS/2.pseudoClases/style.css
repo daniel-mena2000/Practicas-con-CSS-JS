@@ -1,0 +1,27 @@
+
+/*Color a un link que no se le ha dado click o ha sido visitado*/
+a:link{
+    font-size: 50px;
+    color: hotpink
+}
+/*Cambia el color si el sitio ya ha sido visitado a atravez de link*/
+a:visited{
+    color: tomato;
+}
+a:hover{
+    background-color: aqua;
+    color: rgb(234, 226, 226);
+}
+
+
+/*Decimos que todos los "p" que no tengan la clase "country" tengan estos estilos*/
+p:not(.country){
+    font-size: 40px;
+    color: blue;
+}
+
+/*Selecciona un hijo en especifico de un elemeto padre*/
+/*En este caso el primer hijo "div" de conteiner  */
+.conteiner div:nth-child(2){
+    background-color: aquamarine;
+}

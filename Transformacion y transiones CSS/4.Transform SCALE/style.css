@@ -1,0 +1,49 @@
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+/*Agrandando*/
+.circle:hover{
+/*1 es el valor por defecto osea que no va a suceder nada*/
+    transform: scale(1.2);
+}
+
+/*.................................................................................*/
+.circle2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+/*Agrandando*/
+.circle2:hover{
+/*1 es el valor por defecto osea que no va a suceder nada*/
+    transform: scale(0.8);
+}
+
+/*.................................................................................*/
+.circle3{
+    width: 100px;
+    height: 100px;
+    
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+/*Reduciendo el tamaño en un eje*/
+.circle3:hover{
+/*1 es el valor por defecto osea que no va a suceder nada*/
+    transform: scaleX(0.8);
+}
+
+.circle4{
+    width: 100px;
+    height: 100px;
+    
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+/*Reduciendo el tamaño en un eje*/
+.circle4:hover{
+/*1 es el valor por defecto osea que no va a suceder nada*/
+    transform: scaleX(0.8, 1.2);
+}

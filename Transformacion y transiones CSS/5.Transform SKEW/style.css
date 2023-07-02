@@ -1,0 +1,22 @@
+
+/*En "skew" la unidad sera en grados con "deg"  */
+.circle{
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.circle:hover{
+    transform: skew(20deg)
+}
+
+/*.................................................................................*/
+.circle2{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.circle2:hover{
+    transform: skewY(20deg)
+}
+

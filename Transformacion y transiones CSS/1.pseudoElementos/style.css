@@ -1,0 +1,9 @@
+
+/*Nos colocara antes del contenido algo que nosotros querramos*/
+div::before{
+    content: ":)";
+}
+
+div::after{
+    content: ":(";
+}
