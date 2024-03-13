@@ -17,6 +17,8 @@ const listaAlumnos = [
     {nombre:"Leo" , asistencias:3}
 ]
 
+console.log(listaAlumnos);
+
 const crearElementoMensaje = (mensaje, color) =>{
     const p = document.createElement("p");
     p.style.color = color
@@ -48,6 +50,11 @@ btn.addEventListener("click", ()=>{
 
 
 const agregarAlumno = (nombreAlumnoAgre, asistenciasAgre) =>{
+    if (nombreAlumnoAgre == '' || asistenciasAgre == '') {
+        crearElementoMensaje(`Agrega los datos requeridos`,"red");
+
+
+    }else{
     let alumnoExistente = false;
 
     for (const iteratorAgre of listaAlumnos) {
@@ -65,6 +72,7 @@ const agregarAlumno = (nombreAlumnoAgre, asistenciasAgre) =>{
         listaAlumnos.push(nuevosAlumnos)
         crearElementoMensaje(`El alumno: ${nombreAlumnoAgre} con ${asistenciasAgre} asistencias se agrego con exito a la lista`,"purple")
     }
+}
 }
 
 btnAgre.addEventListener("click", ()=>{
