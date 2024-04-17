@@ -1,0 +1,17 @@
+
+
+{
+    "workbench.colorCustomizations": {
+        "[Mayukai Dark]": {
+            //"tab.activeBackground": "#ff0000"
+            "foreground": "#00ffea",
+            "widget.shadow": "#00ffea",
+
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "keywords": "#19e1ca",
+        "functions": "#ffd500"
+    },
+    "window.zoomLevel": 0.9
+}

@@ -1,0 +1,85 @@
+
+@media screen and (min-width:1024px ){
+    /* position sticky para que no este sobre las letras o contenido */
+      
+    .hero-image{
+        background-image: url("/PROYECTO\ 9-Portafolio/assets/fondo-mediano.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        }
+    .header{
+        position: sticky;
+        top: 0;
+        padding: 0.5rem;
+        height: 3.5rem;
+        background-color: transparent;
+      }
+    
+      .menu-btn{
+        display: none;
+      }
+    
+      .menu{
+        position: static;
+        width: auto;
+        opacity: 1;
+        pointer-events: auto;
+        flex-direction: row;
+        background-color: transparent;
+
+      }
+    
+      .menu a{
+        padding: 0 1rem;
+        font-size: 1.1rem;
+        
+      }
+      
+      .menu a:hover{
+        background-color: transparent;
+        margin-left: 4px;
+      }
+    
+      .menu .inicio{
+        border-left: 1px solid white;
+      }
+
+      .hero-image-title{
+        font-size: 4rem;
+      }
+
+/* ACERCA DE................................................................. */
+    #acerca{
+      background-color: var(--first-color-1);
+      color: #f1e8f0;
+    }  
+    .info-acercaDe{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 5rem;
+      }
+
+    .image-perfil{
+        width: 400px;
+        height: 450px;
+        border-radius: 50%;
+
+      }
+    .acerca-info-text{
+      margin-left: 20px;
+    }
+      .info-acercaDe p{
+        text-align: right;
+      }
+
+    .content-img-perfil{
+      margin: auto;
+    }
+
+    .habilidades{
+      margin: auto;
+    }
+    }
+    
