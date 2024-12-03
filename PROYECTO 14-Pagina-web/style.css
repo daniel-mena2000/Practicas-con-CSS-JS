@@ -4,13 +4,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-:root{
-    --color-primario: "#33e3ff";
-    --color-secundario: "#191a23";
-    --gray-color: "#f3f3f3";
+:root {
+    --color-primario: #68e1fd;
+    --color-secundario: #0c2a2e;
+    --gray-color: #f3f3f3;
     --padding-container: 80px 0;
-
 }
+
 body,
 input,
 textarea,
@@ -37,7 +37,7 @@ button{
     justify-content: space-between;
     height: 80px;
 }
-/* con has podemos hacer una condicion para que cambie el icono */
+/* con has podemos hacer una condicion para que cambie el icono y que el menu no se translade es decir no se oculte*/
 .nav:has(.nav__checkbox:checked){
     --nav-icon-background: url("./assets/menu-close.svg");
     --transform-list-menu: translate(0);
@@ -89,4 +89,170 @@ button{
 }
 .nav__link:hover{
     text-decoration: underline;
+}
+
+/* Hero main */
+
+.hero__main{
+    padding: 30px;
+    display: grid;
+    gap: 1.5rem
+}
+
+.hero__title{
+/* Que el titulo mida minimo 2rem, el valor de enmedio es el valor ideal, en este caso 5 porciento del viewportWidth o el total de todo el ancho mas 1 rem, y maximo 2.8rem */
+    font-size: clamp(2rem, 4vw + 1rem, 2.8rem);
+}
+
+.hero__figure{
+    /* Que la imagen mida minimo el 100% pero que no rebase los 380px */
+    width: min(100%, 380px);
+    /* Y en caso de que se pase que el contenedor centre la imagen */
+    justify-self: center;
+}
+
+.hero__img{
+    width: 100%;
+}
+
+.hero__paragraph{
+    font-size: 1.2rem;
+    line-height: 2;
+}
+.hero__cta{
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Services.............. */
+    .servies{
+        padding: var(--padding-container);
+    }
+
+    .title{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+  .title__highligth{
+    padding: 6px;
+    border-radius: 6px;
+    background-color: var(--color-primario);
+    display: inline-block;
+  }
+  .paragraph{
+    margin-top: 1.5rem;
+    line-height: 2;
+  }
+  .services__container{
+    margin-top: 3rem;
+    display: grid;
+    gap: 2rem;
+  }
+
+  .services__article{
+    width: min(95%, 450px);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    border: 1px solid black;
+    border-bottom-width: 3px;
+    border-radius: 1.5rem;
+  }
+  .services__title{
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .services__article--blue{
+    background-color: var(--color-primario);
+    --color-title: var(--gray-color)
+
+  }
+  .services__article--black{
+    background-color: gold;
+    --color-title: var(--gray-color)
+
+  }
+
+  .services__article--gray{
+    background-color: var(--gray-color);
+    --color-title: var(--color-primario)
+  }
+  .services__span{
+    display: block;
+    width: max-content;
+    background-color: var(--color-title);
+    padding: 2px 6px;
+    border-radius: 6px;
+  }
+  .services__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .services__link{
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .services__img{
+    min-width: 80px;
+    max-width: 160px;
+    width: 50%;
+  }
+
+/* MEDIAS */
+@media (width >= 768px){
+    /* hero */
+    .hero__main{
+    padding: var(--padding-container);
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    grid-auto-columns: 50% 45%;
+    /* Aginaremos areas*/
+    grid-template-areas:
+    "titulo img"
+    "parrafo img"
+    "link img";
+    }
+/* Asignamos las areas */
+    .hero__title{
+        grid-area: titulo;
+    }
+    .hero__paragraph{
+        grid-area: parrafo;
+    }
+    .hero__cta{
+        grid-area: link;
+        padding: 1rem 2rem;
+        place-self: start;
+
+    }
+    .hero__figure{
+        grid-area: img;
+    }
+
+}
+
+
+/* Yo quiero que este media se active siemprey cuando el viewport sea mayor a 900 */
+@media (width >= 900px){
+    /* hero */
+    .nav{
+        --transform-list-menu: translate(0%);
+    }
+    .nav__label{
+        display: none;
+    }
+
+    .nav__list{
+        position: static;
+        grid-auto-flow: column;
+        place-content: unset;
+        gap: 1rem;
+    }
 }
