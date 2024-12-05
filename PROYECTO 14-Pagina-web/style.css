@@ -150,6 +150,8 @@ button{
   .services__container{
     margin-top: 3rem;
     display: grid;
+/* Cuando sean colmnas que minimo sean 300px */
+    grid-template-columns: repeat(auto-fit,minmax(min(300px, 100%), 1fr));
     gap: 2rem;
   }
 
@@ -204,6 +206,78 @@ button{
     width: 50%;
   }
 
+  /* CTA .................................*/
+.cta{
+    margin: 80px 0;
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    padding: 3rem 1rem;
+}
+.cta__content{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+}
+.cta__texts{
+    display: grid;
+    gap: 1rem;
+}
+.cta__links{
+    background-color: black;
+    padding: 1.3rem 0;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.cta__figure{
+    display: none;
+}
+
+/* Preguntas frecuentes (FAQ)................... */
+.faq{
+    padding: 80px 0;
+}
+.faq__container{
+    display: grid;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.faq__item{
+    background-color: var(--gray-color);
+    padding: 1.5rem;
+    border-radius: 30px;
+    border: 1px solid black;
+    border-bottom-width:4px;
+    --icon-question-url: url("./assets/plusIcons.svg")
+}
+/* Podemos asignar estilos cuando la etiqueta "details" se abra, con [open]*/
+.faq__item[open]{
+    background-color: var(--color-primario);
+    --icon-question-url: url("./assets/closeIcon.svg")
+
+}
+.faq__question{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.faq__question::after{
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: var(--icon-question-url);
+    margin-left: auto;
+}
+.faq__title{
+    font-size: 1.2rem;
+}
+.faq__answer{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #000;
+}
 /* MEDIAS */
 @media (width >= 768px){
     /* hero */
@@ -234,6 +308,19 @@ button{
     }
     .hero__figure{
         grid-area: img;
+    }
+    /* CTA */
+    .cta__content{
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: 45% 45%;
+    }
+    .cta__links{
+        padding: 1.3rem 2rem;
+        place-self: start;
+    }
+    .cta__figure{
+        display: block;
     }
 
 }
